@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(48, 48, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(199, 35, 35, 0.2);
+
+}
+
+ @media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; 
+        margin: 20px;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .left .info ul li {
+        font-size: 14px;
+    }
+    .right .top, .right .about, .right .projects {
+        font-size: 14px;
+    }
+} 
+
+.text3 h3 {
+    color: #093f4d;
+    font-weight: 800; 
+    font-size: 19px; 
+    margin-top: 4px;
+    text-decoration: underline;
+}
+
+
+
+
+/* -----------------------------------------------------Sidebar----------------------------------------------------------*/
+
+.container .left {
+    position: relative;
+    background: #1b1b1b;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.title_left{
+    color: #09f73d;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px; 
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+
+/* -------------------------------------------------------------Contact-------------------------------------------------------*/
+
+
+
+.title_left {
+    letter-spacing: 0.8px;
+    padding-top: 30px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.info ul {
+    position: relative;
+    margin: 10px;
+}
+
+.info ul li {
+    position: relative;
+    list-style: none;
+    margin: 25px 0;
+    padding-left: 20px;
+}
+
+.info ul li .icon {
+    display: inline-block;
+    width: 20px;
+    font-size: 17px;
+    color: #0af6d7; 
+    margin: 0.094em;
+}
+
+
+.info ul li .text3 {
+    color: #fff;
+}
+
+.info ul li .text4 {
+    color: #fff;
+}
+
+
+.info ul li .text3:hover {
+    color: #f62206;
+}
+
+
+/* ---------------------------------------------------------------------------Education-------------------------------------------------------------------*/
+
+
+.info.education h5 {
+    color: #06f6d7;
+    font-weight: 500;
+}
+
+
+.info.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------Certification-------------------------------------------------------------------*/
+
+.info .title_left {
+    align-items: flex-start;
+}
+
+.certificates a {
+    text-decoration: none;
+
+}
+
+
+.course h3 {
+    display: flex;
+    color: rgb(12, 198, 245);
+    font-size: 18px;
+    margin-bottom: 1px;
+    position: relative;
+    text-decoration-style: none;
+}
+
+.course h3:hover {
+    color: rgb(247, 9, 148);
+}
+
+
+
+
+/*-----------------------------------------------------Skills---------------------------------------------------------------*/
+
+
+
+.interest ul li {
+    color: #fff;
+
+}
+
+/*-----------------------icons------------------*/
+
+
+
+.fa-linux {
+    margin-right: 0.5rem;
+}
+
+.fa-aws {
+    margin-right: 0.5rem;
+}
+
+.fa-docker {
+    margin-right: 0.5rem;
+}
+
+.fa-jenkins {
+    margin-right: 0.5rem;
+}
+
+.fa-github{
+    margin-right: 0.8rem;
+}
+
+
+.kuber {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 16px;
+    
+}
+
+
+.icon {
+    width: 1.4rem; 
+    height: 1.4rem;
+    margin-right: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------Right Containers-----------------------------------------------------------*/
+
+
+
+.container .right {
+    position: relative;
+    background: rgb(224, 243, 235);
+    padding: 40px;
+}
+
+.title {
+    text-decoration: underline 1px;
+    color: #15791d;
+    text-transform: uppercase;
+    margin-top: 5px;
+} 
+
+
+p {
+    display: flex;
+    color: #333;
+    word-spacing: 3px;
+    line-height: 26px;
+    text-align: left;
+     
+}
+
+
+/* ------------------------------------------------------------Name @ About----------------------------------------------------*/
+
+.name {
+    text-align: center;
+    text-decoration: underline 1px;
+    color: #09a75d;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}  
+
+.top {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* -----------------------------------------------------------------Experience--------------------------------------------------*/
+
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0; 
+}
+
+
+.box .exp {
+    min-width: 150px;
+
+}
+
+.box .exp h5 {
+    color: #235036;
+    font-weight: 600;
+}
+    
+
+.plant h3 {
+    color: rgb(81, 83, 83);
+    font-size: 18px;
+}
+
+
+
+
+.list {
+    display: flex;
+    color: #333;
+    word-spacing: 3px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------------Internship------------------------------------------------------------------*/
+
+.bijak h3 {
+    color: rgb(10, 40, 68);
+    font-size: 18px;
+}
+
+/*------------------------------------------------------------------Projects------------------------------------------------------------------*/
+
+
+
+.text3 h3 {
+    padding-top: 7px;
+}
+
+
+.li {
+    display: flex;
+    color: #333;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: left;
+    line-height: 27px; 
+    margin-top: 5px;
+}
+
+.services {
+    color: #047504;
+    font-weight: 600;
+    font-style: italic;
+    list-style-type:none;
+    margin-top: 7px;
+}
+
